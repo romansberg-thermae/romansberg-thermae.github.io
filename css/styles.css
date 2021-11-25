@@ -66,15 +66,17 @@ li,
 }
 
 
-a {
+ a {
     text-decoration: none;
     color: white;
     display: block;
     padding: 20px;
 
 }
-
-a:hover {
+form {
+    text-align: center;
+}
+.right-head a:hover {
     background: rgb(81, 129, 184, 0.6);
     transition: all 0.5s;
     color: rgb(224, 223, 223);
@@ -167,7 +169,7 @@ nav {
 .description h2,
 .donate,
 .photos h2,
-.news h2 {
+.news  {
     text-align: center;
     padding-bottom: 30px;
 }
