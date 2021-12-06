@@ -1,216 +1,205 @@
 body {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 .title {
-    font-size: 70px;
-    color: white;
-    padding: 10px;
-    margin-bottom: 400px;
-    font-family: "Josefin Sans";
-    padding-left: 150px;
+  font-size: 70px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 400px;
+  font-family: "Josefin Sans";
+  padding-left: 150px;
 }
 
 h2 {
-    font-family: "Poiret One";
+  font-family: "Poiret One";
 }
 
 .menu,
 .menu li {
-    list-style: none;
-
+  list-style: none;
 }
 li {
-    list-style: square;
+  list-style: square;
 }
 
 .menu {
-    padding: 0;
-    margin-top: 100px;
-
+  padding: 0;
+  margin-top: 100px;
 }
 
 .menu li {
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
 
-    margin-bottom: 20px;
-    font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.575);
-    font-family: "Poiret One";
-
+  margin-bottom: 20px;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.575);
+  font-family: "Poiret One";
 }
 
 li,
 .name {
-    position: relative;
+  position: relative;
 
-    animation: showLeft 1.5s;
+  animation: showLeft 1.5s;
 
-    z-index: 1;
+  z-index: 1;
 }
 
 @keyframes showLeft {
+  from {
+    left: -100%;
+  }
 
-    from {
-        left: -100%;
-    }
-
-    to {
-        left: 0;
-    }
-
+  to {
+    left: 0;
+  }
 }
 
-
- a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 20px;
-
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 20px;
 }
 form {
-    text-align: center;
+  text-align: center;
 }
 .right-head a:hover {
-    background: rgb(81, 129, 184, 0.6);
-    transition: all 0.5s;
-    color: rgb(224, 223, 223);
+  background: rgb(81, 129, 184, 0.6);
+  transition: all 0.5s;
+  color: rgb(224, 223, 223);
 }
 
 .header-back {
-    background: url(../img/thermae.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+  background: url(../img/thermae.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
-    background: rgb(64, 75, 95);
-
+  background: rgb(64, 75, 95);
 }
 
 header,
 section {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 @-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 nav {
-    display: flex;
+  display: flex;
 }
 
 .icon {
-    color: #5181b8;
+  color: #5181b8;
 }
 
 .overlay {
-    background: rgba(164, 206, 240, 0.88);
-    margin-left: 50px;
-
+  background: rgba(164, 206, 240, 0.88);
+  margin-left: 50px;
 }
 
 .left-head {
-    padding-top: 160px;
+  padding-top: 160px;
 
-    color: white;
-
+  color: white;
 }
 
 .right-head {
-    width: 50%;
-    margin-left: 20px;
-    margin-right: 20px;
+  width: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-
-
 .description {
-    padding: 30px;
-    background: #f7f6f6;
+  padding: 30px;
+  background: #f7f6f6;
 
-
-    color: #464646;
-    text-align: justify;
+  color: #464646;
+  text-align: justify;
 }
 
 .description_wrap {
-    margin: 0 auto;
-    max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .description h2,
 .donate,
-.photos h2,
-.news  {
-    text-align: center;
-    padding-bottom: 30px;
+.feedback h2,
+.volunteer h2,
+.news {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.news img {
+  border-radius: 10px;
 }
 
 .donate {
-    padding: 30px;
-    color: #464646;
+  padding: 30px;
+  color: #464646;
 }
 
-.photos {
-    background: #f7f6f6;
-    padding: 30px;
+.feedback,
+.volunteer {
+  background: #f7f6f6;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 1280px) {
+  nav {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .title {
+    font-size: 45px;
     text-align: center;
-}
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
 
-@media (min-width:300px) and (max-width: 1280px) {
-    nav {
-        display: block;
-        padding-bottom: 10px;
-    }
+  .left-head {
+    padding: 0px;
+  }
 
-    .title {
-        font-size: 45px;
-        text-align: center;
-        padding-left: 0px;
-        margin-bottom: 0px;
-    }
+  .right-head {
+    padding-bottom: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-    .left-head {
-        padding: 0px;
-
-    }
-
-    .right-head {
-        padding-bottom: 10px;
-        margin: 0 auto;
-        width: 100%;
-
-    }
-
-    .overlay {
-        margin: 0px;
-    }
+  .overlay {
+    margin: 0px;
+  }
 }
