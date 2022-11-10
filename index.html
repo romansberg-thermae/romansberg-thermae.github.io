@@ -71,7 +71,7 @@
         <p>Вы можете поддержать мой труд, отблагодарив финансово :</p>
         <p> <strong>Шаг 1: скопируйте номер карты в буфер обмена, нажав кнопку ниже:</strong> </p>
         <p id="nomer">4100 1172 0403 5489</p>
-        <p> <button onclick="document.getElementById('nomer').execCommand('copy')">Скопировать номер карты</button></p>
+        <p> <button id="copynumber">Скопировать номер карты</button></p>
         <p><strong> Шаг 2: зайдите в ваше приложение СберОнлайн и введите в поиске слово "юмани"</strong></p>
         <p><img src="img/transfer1.png" alt=""></p>
         <p><img src="img/transfer2.png" alt=""></p>
@@ -122,6 +122,17 @@
             </ul>
        
     </section>
+
+    <script>
+        const nomer = document.querySelector('#nomer');
+        const copybutton = document.querySelector('#copynumber');
+
+        copybutton.onclick = function () {
+            nomer.select();
+            document.execCommand("copy");
+        }
+
+    </script>
 </body>
 
 </html>
