@@ -124,12 +124,15 @@
     </section>
 
     <script>
-        const nomer = document.querySelector('#nomer');
+        const nomer = document.querySelector('#nomer').innerHTML;
         const copybutton = document.querySelector('#copynumber');
 
         copybutton.onclick = function () {
-            nomer.select();
+            const account_num = nomer.replace(/ /g,'');
+            alert(account_num);
+            account_num.select();
             document.execCommand("copy");
+           
         }
 
     </script>
