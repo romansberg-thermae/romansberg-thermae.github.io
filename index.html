@@ -128,8 +128,15 @@
         const copybutton = document.querySelector('#copynumber');
 
         copybutton.onclick = function () {
-            nomer.select();
-            document.execCommand("copy");
+            navigator.clipboard.writeText('4100117204035489').then(
+                ()=> {
+                    console.log('copied!') }
+                    ).catch(
+                        err => {
+                            console.log(err);
+                        }
+                    );
+       
            
         }
 
