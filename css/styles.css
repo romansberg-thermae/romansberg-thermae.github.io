@@ -145,9 +145,10 @@ nav {
 
 .description {
   padding: 30px;
-  background: #f7f6f6;
+ 
 
   color: #464646;
+   color: #464646;
   text-align: justify;
 }
 
@@ -170,7 +171,7 @@ nav {
 
 .donate {
   padding: 30px;
-  color: #464646;
+  background: #f7f6f6;
 }
 
 .feedback,
